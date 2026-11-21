@@ -11,7 +11,15 @@
       "copies": 3,
       "location": "Second Floor, AI Shelf A2",
       "dueDate": null,
-      "tags": ["ai", "machine learning", "projects"]
+      "tags": [
+        "ai",
+        "machine learning",
+        "projects"
+      ],
+      "isbn": "978-100000000",
+      "category": "Artificial Intelligence",
+      "reservationCount": 0,
+      "issueLimitDays": 14
     },
     {
       "id": "LIB-1002",
@@ -22,7 +30,16 @@
       "copies": 5,
       "location": "First Floor, Software Shelf W1",
       "dueDate": null,
-      "tags": ["react", "node", "apis", "frontend"]
+      "tags": [
+        "react",
+        "node",
+        "apis",
+        "frontend"
+      ],
+      "isbn": "978-100000137",
+      "category": "Web Development",
+      "reservationCount": 0,
+      "issueLimitDays": 14
     },
     {
       "id": "LIB-1003",
@@ -33,7 +50,15 @@
       "copies": 0,
       "location": "Ground Floor, Systems Shelf D4",
       "dueDate": "2026-11-24",
-      "tags": ["sql", "normalization", "transactions"]
+      "tags": [
+        "sql",
+        "normalization",
+        "transactions"
+      ],
+      "isbn": "978-100000274",
+      "category": "Databases",
+      "reservationCount": 4,
+      "issueLimitDays": 14
     },
     {
       "id": "LIB-1004",
@@ -44,7 +69,15 @@
       "copies": 7,
       "location": "Lab Reference Desk",
       "dueDate": null,
-      "tags": ["os", "linux", "lab"]
+      "tags": [
+        "os",
+        "linux",
+        "lab"
+      ],
+      "isbn": "978-100000411",
+      "category": "Operating Systems",
+      "reservationCount": 0,
+      "issueLimitDays": 14
     },
     {
       "id": "LIB-1005",
@@ -55,7 +88,15 @@
       "copies": 2,
       "location": "Career Corner C1",
       "dueDate": null,
-      "tags": ["algorithms", "placement", "interview"]
+      "tags": [
+        "algorithms",
+        "placement",
+        "interview"
+      ],
+      "isbn": "978-100000548",
+      "category": "Computer Science",
+      "reservationCount": 0,
+      "issueLimitDays": 14
     },
     {
       "id": "LIB-1006",
@@ -66,7 +107,15 @@
       "copies": 0,
       "location": "Electronics Shelf E3",
       "dueDate": "2026-11-26",
-      "tags": ["iot", "sensors", "microcontrollers"]
+      "tags": [
+        "iot",
+        "sensors",
+        "microcontrollers"
+      ],
+      "isbn": "978-100000685",
+      "category": "Electronics",
+      "reservationCount": 2,
+      "issueLimitDays": 14
     },
     {
       "id": "LIB-1007",
@@ -77,7 +126,15 @@
       "copies": 4,
       "location": "Second Floor, Cloud Shelf C3",
       "dueDate": null,
-      "tags": ["devops", "containers", "hosting"]
+      "tags": [
+        "devops",
+        "containers",
+        "hosting"
+      ],
+      "isbn": "978-100000822",
+      "category": "Cloud Computing",
+      "reservationCount": 0,
+      "issueLimitDays": 14
     },
     {
       "id": "LIB-1008",
@@ -88,7 +145,16 @@
       "copies": 1,
       "location": "Innovation Lab Reading Bay",
       "dueDate": null,
-      "tags": ["mcp", "tools", "llm", "assistant"]
+      "tags": [
+        "mcp",
+        "tools",
+        "llm",
+        "assistant"
+      ],
+      "isbn": "978-100000959",
+      "category": "AI Integration",
+      "reservationCount": 0,
+      "issueLimitDays": 14
     },
     {
       "id": "LIB-1009",
@@ -99,7 +165,15 @@
       "copies": 4,
       "location": "First Floor, Software Shelf W3",
       "dueDate": null,
-      "tags": ["coding", "maintainability", "best practices"]
+      "tags": [
+        "coding",
+        "maintainability",
+        "best practices"
+      ],
+      "isbn": "978-100001096",
+      "category": "Software Engineering",
+      "reservationCount": 0,
+      "issueLimitDays": 14
     },
     {
       "id": "LIB-1010",
@@ -110,7 +184,15 @@
       "copies": 2,
       "location": "Second Floor, Systems Shelf S1",
       "dueDate": null,
-      "tags": ["distributed systems", "databases", "scalability"]
+      "tags": [
+        "distributed systems",
+        "databases",
+        "scalability"
+      ],
+      "isbn": "978-100001233",
+      "category": "Distributed Systems",
+      "reservationCount": 0,
+      "issueLimitDays": 14
     },
     {
       "id": "LIB-1011",
@@ -121,7 +203,15 @@
       "copies": 6,
       "location": "Ground Floor, Electronics Shelf N2",
       "dueDate": null,
-      "tags": ["networking", "tcp ip", "protocols"]
+      "tags": [
+        "networking",
+        "tcp ip",
+        "protocols"
+      ],
+      "isbn": "978-100001370",
+      "category": "Computer Networks",
+      "reservationCount": 0,
+      "issueLimitDays": 14
     },
     {
       "id": "LIB-1012",
@@ -132,7 +222,15 @@
       "copies": 0,
       "location": "Second Floor, Theory Shelf T1",
       "dueDate": "2026-11-27",
-      "tags": ["automata", "complexity", "computation"]
+      "tags": [
+        "automata",
+        "complexity",
+        "computation"
+      ],
+      "isbn": "978-100001507",
+      "category": "Theoretical Computer Science",
+      "reservationCount": 3,
+      "issueLimitDays": 14
     },
     {
       "id": "LIB-1013",
@@ -143,7 +241,15 @@
       "copies": 3,
       "location": "First Floor, Security Shelf C4",
       "dueDate": null,
-      "tags": ["cryptography", "security", "network"]
+      "tags": [
+        "cryptography",
+        "security",
+        "network"
+      ],
+      "isbn": "978-100001644",
+      "category": "Cybersecurity",
+      "reservationCount": 0,
+      "issueLimitDays": 14
     },
     {
       "id": "LIB-1014",
@@ -154,7 +260,15 @@
       "copies": 2,
       "location": "Second Floor, AI Shelf A4",
       "dueDate": null,
-      "tags": ["deep learning", "neural networks", "python"]
+      "tags": [
+        "deep learning",
+        "neural networks",
+        "python"
+      ],
+      "isbn": "978-100001781",
+      "category": "Machine Learning",
+      "reservationCount": 0,
+      "issueLimitDays": 14
     },
     {
       "id": "LIB-1015",
@@ -165,7 +279,15 @@
       "copies": 8,
       "location": "Ground Floor, Programming Shelf P2",
       "dueDate": null,
-      "tags": ["python", "beginner", "projects"]
+      "tags": [
+        "python",
+        "beginner",
+        "projects"
+      ],
+      "isbn": "978-100001918",
+      "category": "Programming",
+      "reservationCount": 0,
+      "issueLimitDays": 14
     },
     {
       "id": "LIB-1016",
@@ -176,7 +298,15 @@
       "copies": 0,
       "location": "First Floor, Career Shelf P5",
       "dueDate": "2026-11-24",
-      "tags": ["career", "engineering", "pragmatic"]
+      "tags": [
+        "career",
+        "engineering",
+        "pragmatic"
+      ],
+      "isbn": "978-100002055",
+      "category": "Software Development",
+      "reservationCount": 2,
+      "issueLimitDays": 14
     },
     {
       "id": "LIB-1017",
@@ -187,7 +317,15 @@
       "copies": 5,
       "location": "Ground Floor, Mathematics Shelf M1",
       "dueDate": null,
-      "tags": ["matrices", "vectors", "algebra"]
+      "tags": [
+        "matrices",
+        "vectors",
+        "algebra"
+      ],
+      "isbn": "978-100002192",
+      "category": "Mathematics",
+      "reservationCount": 0,
+      "issueLimitDays": 14
     },
     {
       "id": "LIB-1018",
@@ -198,7 +336,15 @@
       "copies": 3,
       "location": "Career Corner C2",
       "dueDate": null,
-      "tags": ["system design", "placement", "scalability"]
+      "tags": [
+        "system design",
+        "placement",
+        "scalability"
+      ],
+      "isbn": "978-100002329",
+      "category": "Interview Preparation",
+      "reservationCount": 0,
+      "issueLimitDays": 14
     },
     {
       "id": "LIB-1019",
@@ -209,7 +355,15 @@
       "copies": 4,
       "location": "Electronics Shelf E5",
       "dueDate": null,
-      "tags": ["arduino", "robotics", "embedded"]
+      "tags": [
+        "arduino",
+        "robotics",
+        "embedded"
+      ],
+      "isbn": "978-100002466",
+      "category": "Robotics",
+      "reservationCount": 0,
+      "issueLimitDays": 14
     },
     {
       "id": "LIB-1020",
@@ -220,7 +374,205 @@
       "copies": 0,
       "location": "Second Floor, Research Shelf R1",
       "dueDate": "2026-11-29",
-      "tags": ["research", "thesis", "statistics"]
+      "tags": [
+        "research",
+        "thesis",
+        "statistics"
+      ],
+      "isbn": "978-100002603",
+      "category": "Academic Research",
+      "reservationCount": 6,
+      "issueLimitDays": 14
+    },
+    {
+      "id": "LIB-1021",
+      "title": "Fundamentals of Database Systems",
+      "author": "Ramez Elmasri",
+      "subject": "Databases",
+      "availability": "available",
+      "copies": 6,
+      "location": "Ground Floor, Systems Shelf D6",
+      "dueDate": null,
+      "tags": [
+        "sql",
+        "transactions",
+        "databases"
+      ],
+      "isbn": "978-0133970777",
+      "category": "Databases",
+      "reservationCount": 0,
+      "issueLimitDays": 14
+    },
+    {
+      "id": "LIB-1022",
+      "title": "Compilers: Principles, Techniques and Tools",
+      "author": "Alfred V. Aho",
+      "subject": "Computer Science",
+      "availability": "available",
+      "copies": 3,
+      "location": "Second Floor, Theory Shelf C2",
+      "dueDate": null,
+      "tags": [
+        "compilers",
+        "grammar",
+        "systems"
+      ],
+      "isbn": "978-0321486813",
+      "category": "Computer Science",
+      "reservationCount": 0,
+      "issueLimitDays": 14
+    },
+    {
+      "id": "LIB-1023",
+      "title": "Artificial Intelligence: A Modern Approach",
+      "author": "Stuart Russell and Peter Norvig",
+      "subject": "Artificial Intelligence",
+      "availability": "checked_out",
+      "copies": 0,
+      "location": "Second Floor, AI Shelf A6",
+      "dueDate": "2026-12-01",
+      "tags": [
+        "ai",
+        "search",
+        "agents"
+      ],
+      "isbn": "978-0134610993",
+      "category": "Artificial Intelligence",
+      "reservationCount": 7,
+      "issueLimitDays": 14
+    },
+    {
+      "id": "LIB-1024",
+      "title": "Introduction to Algorithms",
+      "author": "Thomas H. Cormen",
+      "subject": "Algorithms",
+      "availability": "available",
+      "copies": 5,
+      "location": "Ground Floor, Algorithms Shelf A1",
+      "dueDate": null,
+      "tags": [
+        "algorithms",
+        "data structures",
+        "analysis"
+      ],
+      "isbn": "978-0262046305",
+      "category": "Computer Science",
+      "reservationCount": 0,
+      "issueLimitDays": 14
+    },
+    {
+      "id": "LIB-1025",
+      "title": "Operating System Concepts",
+      "author": "Silberschatz, Galvin and Gagne",
+      "subject": "Operating Systems",
+      "availability": "available",
+      "copies": 4,
+      "location": "Lab Reference Desk O2",
+      "dueDate": null,
+      "tags": [
+        "os",
+        "processes",
+        "memory"
+      ],
+      "isbn": "978-1119800361",
+      "category": "Computer Science",
+      "reservationCount": 0,
+      "issueLimitDays": 14
+    },
+    {
+      "id": "LIB-1026",
+      "title": "The Elements of Statistical Learning",
+      "author": "Hastie, Tibshirani and Friedman",
+      "subject": "Statistics",
+      "availability": "available",
+      "copies": 2,
+      "location": "Second Floor, Analytics Shelf L3",
+      "dueDate": null,
+      "tags": [
+        "statistics",
+        "machine learning",
+        "models"
+      ],
+      "isbn": "978-0387848570",
+      "category": "Data Science",
+      "reservationCount": 0,
+      "issueLimitDays": 14
+    },
+    {
+      "id": "LIB-1027",
+      "title": "Software Architecture in Practice",
+      "author": "Len Bass and Paul Clements",
+      "subject": "Software Engineering",
+      "availability": "checked_out",
+      "copies": 0,
+      "location": "First Floor, Software Shelf W6",
+      "dueDate": "2026-12-03",
+      "tags": [
+        "architecture",
+        "quality",
+        "design"
+      ],
+      "isbn": "978-0321815736",
+      "category": "Software Engineering",
+      "reservationCount": 4,
+      "issueLimitDays": 14
+    },
+    {
+      "id": "LIB-1028",
+      "title": "Computer Organization and Design",
+      "author": "David Patterson and John Hennessy",
+      "subject": "Computer Architecture",
+      "availability": "available",
+      "copies": 7,
+      "location": "Ground Floor, Systems Shelf H1",
+      "dueDate": null,
+      "tags": [
+        "cpu",
+        "assembly",
+        "architecture"
+      ],
+      "isbn": "978-0128203316",
+      "category": "Computer Architecture",
+      "reservationCount": 0,
+      "issueLimitDays": 14
+    },
+    {
+      "id": "LIB-1029",
+      "title": "Digital Design and Computer Architecture",
+      "author": "Sarah Harris and David Harris",
+      "subject": "Digital Systems",
+      "availability": "available",
+      "copies": 3,
+      "location": "Electronics Shelf E8",
+      "dueDate": null,
+      "tags": [
+        "digital logic",
+        "cpu",
+        "hdl"
+      ],
+      "isbn": "978-0128205488",
+      "category": "Electronics",
+      "reservationCount": 0,
+      "issueLimitDays": 14
+    },
+    {
+      "id": "LIB-1030",
+      "title": "Fluent Python",
+      "author": "Luciano Ramalho",
+      "subject": "Programming",
+      "availability": "available",
+      "copies": 5,
+      "location": "Ground Floor, Programming Shelf P4",
+      "dueDate": null,
+      "tags": [
+        "python",
+        "advanced",
+        "software"
+      ],
+      "isbn": "978-1492056355",
+      "category": "Programming",
+      "reservationCount": 0,
+      "issueLimitDays": 14
     }
   ]
 }

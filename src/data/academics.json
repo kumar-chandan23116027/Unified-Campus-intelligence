@@ -8,7 +8,15 @@
       "title": "Course registration closes",
       "date": "2026-11-23",
       "summary": "Semester V course registration closes at 5:00 PM. Late registration needs advisor approval.",
-      "tags": ["registration", "deadline", "semester"]
+      "tags": [
+        "registration",
+        "deadline",
+        "semester"
+      ],
+      "department": "Academic Office",
+      "semester": "Semester V",
+      "contact": "academic.office@northstar.edu",
+      "status": "Published"
     },
     {
       "id": "ACD-3002",
@@ -16,7 +24,15 @@
       "title": "Attendance eligibility rule",
       "date": null,
       "summary": "Students need at least 75 percent attendance in each course to be eligible for end-semester exams.",
-      "tags": ["attendance", "exam", "eligibility"]
+      "tags": [
+        "attendance",
+        "exam",
+        "eligibility"
+      ],
+      "department": "Academic Office",
+      "semester": "Semester V",
+      "contact": "academic.office@northstar.edu",
+      "status": "In effect"
     },
     {
       "id": "ACD-3003",
@@ -24,7 +40,15 @@
       "title": "Scholarship renewal forms",
       "date": "2026-11-25",
       "summary": "Merit scholarship renewal forms must be submitted through the student portal before midnight.",
-      "tags": ["scholarship", "forms", "finance"]
+      "tags": [
+        "scholarship",
+        "forms",
+        "finance"
+      ],
+      "department": "Academic Office",
+      "semester": "Semester V",
+      "contact": "academic.office@northstar.edu",
+      "status": "Published"
     },
     {
       "id": "ACD-3004",
@@ -32,7 +56,15 @@
       "title": "Mid-semester exam timetable",
       "date": "2026-11-28",
       "summary": "The revised mid-semester timetable is available in the academics office and student portal.",
-      "tags": ["exam", "timetable", "mid semester"]
+      "tags": [
+        "exam",
+        "timetable",
+        "mid semester"
+      ],
+      "department": "Academic Office",
+      "semester": "Semester V",
+      "contact": "academic.office@northstar.edu",
+      "status": "Published"
     },
     {
       "id": "ACD-3005",
@@ -40,7 +72,15 @@
       "title": "Library fine and book issue policy",
       "date": null,
       "summary": "Standard book issue duration is 14 days. Late returns are charged at 5 INR per day per book.",
-      "tags": ["library", "fine", "books"]
+      "tags": [
+        "library",
+        "fine",
+        "books"
+      ],
+      "department": "Academic Office",
+      "semester": "Semester V",
+      "contact": "academic.office@northstar.edu",
+      "status": "Published"
     },
     {
       "id": "ACD-3006",
@@ -48,7 +88,15 @@
       "title": "Project submission format",
       "date": null,
       "summary": "Final project submissions must include source code, README, architecture notes, test evidence, and a demo video link.",
-      "tags": ["project", "submission", "demo"]
+      "tags": [
+        "project",
+        "submission",
+        "demo"
+      ],
+      "department": "Academic Office",
+      "semester": "Semester V",
+      "contact": "academic.office@northstar.edu",
+      "status": "In effect"
     },
     {
       "id": "ACD-3007",
@@ -56,7 +104,15 @@
       "title": "Minor project progress review",
       "date": "2026-11-26",
       "summary": "Semester V project teams must submit their progress presentation and working prototype report to the department.",
-      "tags": ["project", "review", "semester"]
+      "tags": [
+        "project",
+        "review",
+        "semester"
+      ],
+      "department": "Academic Office",
+      "semester": "Semester V",
+      "contact": "academic.office@northstar.edu",
+      "status": "Published"
     },
     {
       "id": "ACD-3008",
@@ -64,7 +120,15 @@
       "title": "Online course credit approval",
       "date": "2026-11-30",
       "summary": "Students seeking approval for MOOC course credits must submit certificates and learning plans before 4:00 PM.",
-      "tags": ["mooc", "credit", "certificate"]
+      "tags": [
+        "mooc",
+        "credit",
+        "certificate"
+      ],
+      "department": "Academic Office",
+      "semester": "Semester V",
+      "contact": "academic.office@northstar.edu",
+      "status": "Published"
     },
     {
       "id": "ACD-3009",
@@ -72,7 +136,15 @@
       "title": "Backlog examination registration",
       "date": "2026-12-03",
       "summary": "Backlog exam applications and fee payments must be completed through the student portal.",
-      "tags": ["exam", "backlog", "registration"]
+      "tags": [
+        "exam",
+        "backlog",
+        "registration"
+      ],
+      "department": "Academic Office",
+      "semester": "Semester V",
+      "contact": "academic.office@northstar.edu",
+      "status": "Published"
     },
     {
       "id": "ACD-3010",
@@ -80,7 +152,15 @@
       "title": "Revaluation request process",
       "date": null,
       "summary": "Revaluation requests are accepted for seven working days after result publication and require a fee per subject.",
-      "tags": ["revaluation", "results", "examination"]
+      "tags": [
+        "revaluation",
+        "results",
+        "examination"
+      ],
+      "department": "Academic Office",
+      "semester": "Semester V",
+      "contact": "academic.office@northstar.edu",
+      "status": "In effect"
     },
     {
       "id": "ACD-3011",
@@ -88,7 +168,15 @@
       "title": "Departmental lab inventory check",
       "date": "2026-12-05",
       "summary": "Laboratory in-charges will verify hardware, software licenses, and safety equipment before the semester closure.",
-      "tags": ["lab", "inventory", "department"]
+      "tags": [
+        "lab",
+        "inventory",
+        "department"
+      ],
+      "department": "All Departments",
+      "semester": "Semester V",
+      "contact": "academic.office@northstar.edu",
+      "status": "Published"
     },
     {
       "id": "ACD-3012",
@@ -96,7 +184,15 @@
       "title": "Winter vacation travel declaration",
       "date": "2026-12-08",
       "summary": "Hostel residents planning to leave campus during winter break must complete the travel declaration form.",
-      "tags": ["hostel", "travel", "holiday"]
+      "tags": [
+        "hostel",
+        "travel",
+        "holiday"
+      ],
+      "department": "Academic Office",
+      "semester": "Semester V",
+      "contact": "academic.office@northstar.edu",
+      "status": "Published"
     },
     {
       "id": "ACD-3013",
@@ -104,7 +200,15 @@
       "title": "Laptop and device security policy",
       "date": null,
       "summary": "Campus Wi-Fi and laboratory networks require device registration, updated antivirus software, and approved security settings.",
-      "tags": ["cybersecurity", "wifi", "devices"]
+      "tags": [
+        "cybersecurity",
+        "wifi",
+        "devices"
+      ],
+      "department": "Academic Office",
+      "semester": "Semester V",
+      "contact": "academic.office@northstar.edu",
+      "status": "In effect"
     },
     {
       "id": "ACD-3014",
@@ -112,7 +216,175 @@
       "title": "End-semester practical schedule",
       "date": "2026-12-10",
       "summary": "Laboratory practical timetables will be published by department coordinators one week before the examinations.",
-      "tags": ["practical", "exam", "schedule"]
+      "tags": [
+        "practical",
+        "exam",
+        "schedule"
+      ],
+      "department": "Academic Office",
+      "semester": "Semester V",
+      "contact": "academic.office@northstar.edu",
+      "status": "Published"
+    },
+    {
+      "id": "ACD-3015",
+      "type": "notice",
+      "title": "Winter semester result declaration",
+      "date": "2026-12-12",
+      "summary": "Winter semester results will be published on the student portal after departmental verification.",
+      "tags": [
+        "results",
+        "winter",
+        "portal"
+      ],
+      "department": "Examination Office",
+      "semester": "Semester V",
+      "contact": "exams@northstar.edu",
+      "status": "Published"
+    },
+    {
+      "id": "ACD-3016",
+      "type": "policy",
+      "title": "Exam hall conduct guidelines",
+      "date": null,
+      "summary": "Students must carry a valid identity card and are prohibited from unauthorized devices, calculators, and written materials.",
+      "tags": [
+        "exam",
+        "conduct",
+        "hall"
+      ],
+      "department": "Examination Office",
+      "semester": "All semesters",
+      "contact": "exams@northstar.edu",
+      "status": "In effect"
+    },
+    {
+      "id": "ACD-3017",
+      "type": "deadline",
+      "title": "Hostel room renewal",
+      "date": "2026-12-14",
+      "summary": "Continuing students must confirm hostel accommodation and pay the renewal fee by 5:00 PM.",
+      "tags": [
+        "hostel",
+        "accommodation",
+        "fee"
+      ],
+      "department": "Student Welfare",
+      "semester": "All semesters",
+      "contact": "hostel@northstar.edu",
+      "status": "Published"
+    },
+    {
+      "id": "ACD-3018",
+      "type": "notice",
+      "title": "Internship report submission",
+      "date": "2026-12-15",
+      "summary": "Students completing summer or minor internships must submit a signed report and industry feedback form.",
+      "tags": [
+        "internship",
+        "report",
+        "placement"
+      ],
+      "department": "Training and Placement",
+      "semester": "Semester V",
+      "contact": "placement@northstar.edu",
+      "status": "Published"
+    },
+    {
+      "id": "ACD-3019",
+      "type": "deadline",
+      "title": "Elective subject change window",
+      "date": "2026-12-16",
+      "summary": "The final elective change request window is open with written approval from the department advisor.",
+      "tags": [
+        "elective",
+        "registration",
+        "advisor"
+      ],
+      "department": "Department Offices",
+      "semester": "Semester V",
+      "contact": "academic.office@northstar.edu",
+      "status": "Published"
+    },
+    {
+      "id": "ACD-3020",
+      "type": "policy",
+      "title": "Academic integrity policy",
+      "date": null,
+      "summary": "Plagiarism, unauthorized collaboration, and falsified submissions may result in grade penalties or disciplinary action.",
+      "tags": [
+        "plagiarism",
+        "integrity",
+        "discipline"
+      ],
+      "department": "Academic Office",
+      "semester": "All semesters",
+      "contact": "academic.office@northstar.edu",
+      "status": "In effect"
+    },
+    {
+      "id": "ACD-3021",
+      "type": "notice",
+      "title": "Library extended exam hours",
+      "date": "2026-12-18",
+      "summary": "The central library will remain open until 12:00 AM during the end-semester examination period.",
+      "tags": [
+        "library",
+        "hours",
+        "exam"
+      ],
+      "department": "Central Library",
+      "semester": "All semesters",
+      "contact": "library@northstar.edu",
+      "status": "Published"
+    },
+    {
+      "id": "ACD-3022",
+      "type": "deadline",
+      "title": "NSS volunteer enrollment",
+      "date": "2026-12-20",
+      "summary": "Students may register for the next National Service Scheme term before the listed deadline.",
+      "tags": [
+        "nss",
+        "volunteer",
+        "community"
+      ],
+      "department": "Student Affairs",
+      "semester": "All semesters",
+      "contact": "nss@northstar.edu",
+      "status": "Published"
+    },
+    {
+      "id": "ACD-3023",
+      "type": "handbook",
+      "title": "Grievance redressal procedure",
+      "date": null,
+      "summary": "Academic grievances should first be raised with the course coordinator and then escalated to the department head.",
+      "tags": [
+        "grievance",
+        "support",
+        "academic"
+      ],
+      "department": "Academic Office",
+      "semester": "All semesters",
+      "contact": "grievance@northstar.edu",
+      "status": "In effect"
+    },
+    {
+      "id": "ACD-3024",
+      "type": "deadline",
+      "title": "Convocation photograph portal",
+      "date": "2026-12-22",
+      "summary": "Final-year students must upload a formal photograph and verify graduation details for the convocation register.",
+      "tags": [
+        "convocation",
+        "graduation",
+        "photograph"
+      ],
+      "department": "Registrar Office",
+      "semester": "Final year",
+      "contact": "registrar@northstar.edu",
+      "status": "Published"
     }
   ]
 }

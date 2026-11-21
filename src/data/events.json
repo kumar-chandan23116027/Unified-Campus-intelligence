@@ -10,7 +10,17 @@
       "time": "15:00",
       "venue": "Innovation Lab 2",
       "seatsLeft": 18,
-      "tags": ["ai", "mcp", "workshop", "coding"]
+      "tags": [
+        "ai",
+        "mcp",
+        "workshop",
+        "coding"
+      ],
+      "category": "Academic",
+      "registrationRequired": true,
+      "organizerEmail": "clubs@northstar.edu",
+      "registrationDeadline": "2026-11-21",
+      "access": "Students and faculty"
     },
     {
       "id": "EVT-2202",
@@ -20,7 +30,16 @@
       "time": "17:30",
       "venue": "Auditorium A",
       "seatsLeft": 64,
-      "tags": ["tech fest", "volunteer", "orientation"]
+      "tags": [
+        "tech fest",
+        "volunteer",
+        "orientation"
+      ],
+      "category": "Academic",
+      "registrationRequired": true,
+      "organizerEmail": "clubs@northstar.edu",
+      "registrationDeadline": "2026-11-22",
+      "access": "Students and faculty"
     },
     {
       "id": "EVT-2203",
@@ -30,7 +49,16 @@
       "time": "18:00",
       "venue": "CS Lab 4",
       "seatsLeft": 12,
-      "tags": ["placement", "algorithms", "coding"]
+      "tags": [
+        "placement",
+        "algorithms",
+        "coding"
+      ],
+      "category": "Academic",
+      "registrationRequired": true,
+      "organizerEmail": "clubs@northstar.edu",
+      "registrationDeadline": "2026-11-23",
+      "access": "Students and faculty"
     },
     {
       "id": "EVT-2204",
@@ -40,7 +68,16 @@
       "time": "19:00",
       "venue": "Amphitheatre",
       "seatsLeft": 120,
-      "tags": ["culture", "music", "poetry"]
+      "tags": [
+        "culture",
+        "music",
+        "poetry"
+      ],
+      "category": "Academic",
+      "registrationRequired": true,
+      "organizerEmail": "clubs@northstar.edu",
+      "registrationDeadline": "2026-11-24",
+      "access": "Students and faculty"
     },
     {
       "id": "EVT-2205",
@@ -50,7 +87,17 @@
       "time": "16:00",
       "venue": "Seminar Hall B",
       "seatsLeft": 22,
-      "tags": ["cloud", "devops", "hosting", "project"]
+      "tags": [
+        "cloud",
+        "devops",
+        "hosting",
+        "project"
+      ],
+      "category": "Academic",
+      "registrationRequired": true,
+      "organizerEmail": "clubs@northstar.edu",
+      "registrationDeadline": "2026-11-25",
+      "access": "Students and faculty"
     },
     {
       "id": "EVT-2206",
@@ -60,7 +107,16 @@
       "time": "10:00",
       "venue": "Mechanical Workshop",
       "seatsLeft": 8,
-      "tags": ["robotics", "iot", "competition"]
+      "tags": [
+        "robotics",
+        "iot",
+        "competition"
+      ],
+      "category": "Academic",
+      "registrationRequired": true,
+      "organizerEmail": "clubs@northstar.edu",
+      "registrationDeadline": "2026-11-27",
+      "access": "Students and faculty"
     },
     {
       "id": "EVT-2207",
@@ -70,7 +126,17 @@
       "time": "09:30",
       "venue": "Central Computing Lab",
       "seatsLeft": 34,
-      "tags": ["cybersecurity", "ctf", "linux", "competition"]
+      "tags": [
+        "cybersecurity",
+        "ctf",
+        "linux",
+        "competition"
+      ],
+      "category": "Academic",
+      "registrationRequired": true,
+      "organizerEmail": "clubs@northstar.edu",
+      "registrationDeadline": "2026-11-28",
+      "access": "Students and faculty"
     },
     {
       "id": "EVT-2208",
@@ -80,7 +146,16 @@
       "time": "14:00",
       "venue": "Design Studio",
       "seatsLeft": 26,
-      "tags": ["design thinking", "innovation", "projects"]
+      "tags": [
+        "design thinking",
+        "innovation",
+        "projects"
+      ],
+      "category": "Academic",
+      "registrationRequired": true,
+      "organizerEmail": "clubs@northstar.edu",
+      "registrationDeadline": "2026-11-29",
+      "access": "Students and faculty"
     },
     {
       "id": "EVT-2209",
@@ -90,7 +165,16 @@
       "time": "17:00",
       "venue": "Conference Hall",
       "seatsLeft": 48,
-      "tags": ["alumni", "networking", "career"]
+      "tags": [
+        "alumni",
+        "networking",
+        "career"
+      ],
+      "category": "Career",
+      "registrationRequired": true,
+      "organizerEmail": "clubs@northstar.edu",
+      "registrationDeadline": "2026-12-02",
+      "access": "Students and faculty"
     },
     {
       "id": "EVT-2210",
@@ -100,7 +184,16 @@
       "time": "15:30",
       "venue": "Training Room 3",
       "seatsLeft": 40,
-      "tags": ["placement", "resume", "interview"]
+      "tags": [
+        "placement",
+        "resume",
+        "interview"
+      ],
+      "category": "Academic",
+      "registrationRequired": true,
+      "organizerEmail": "clubs@northstar.edu",
+      "registrationDeadline": "2026-12-04",
+      "access": "Students and faculty"
     },
     {
       "id": "EVT-2211",
@@ -110,7 +203,17 @@
       "time": "08:00",
       "venue": "Central Sports Ground",
       "seatsLeft": 95,
-      "tags": ["sports", "team", "fitness", "inter department"]
+      "tags": [
+        "sports",
+        "team",
+        "fitness",
+        "inter department"
+      ],
+      "category": "Sports",
+      "registrationRequired": true,
+      "organizerEmail": "clubs@northstar.edu",
+      "registrationDeadline": "2026-12-06",
+      "access": "Students and faculty"
     },
     {
       "id": "EVT-2212",
@@ -120,7 +223,17 @@
       "time": "16:30",
       "venue": "Innovation Hall",
       "seatsLeft": 72,
-      "tags": ["generative ai", "projects", "demo", "llm"]
+      "tags": [
+        "generative ai",
+        "projects",
+        "demo",
+        "llm"
+      ],
+      "category": "Academic",
+      "registrationRequired": true,
+      "organizerEmail": "clubs@northstar.edu",
+      "registrationDeadline": "2026-12-09",
+      "access": "Students and faculty"
     },
     {
       "id": "EVT-2213",
@@ -130,7 +243,149 @@
       "time": "07:30",
       "venue": "North Campus Gate",
       "seatsLeft": 55,
-      "tags": ["sustainability", "community", "environment"]
+      "tags": [
+        "sustainability",
+        "community",
+        "environment"
+      ],
+      "category": "Academic",
+      "registrationRequired": true,
+      "organizerEmail": "clubs@northstar.edu",
+      "registrationDeadline": "2026-12-12",
+      "access": "Students and faculty"
+    },
+    {
+      "id": "EVT-2214",
+      "title": "Photography Walk",
+      "club": "Visual Arts Society",
+      "date": "2026-12-13",
+      "time": "06:30",
+      "venue": "Botanical Garden",
+      "seatsLeft": 30,
+      "tags": [
+        "photography",
+        "outdoor",
+        "culture"
+      ],
+      "category": "Culture",
+      "registrationRequired": true,
+      "organizerEmail": "arts@northstar.edu",
+      "registrationDeadline": "2026-12-12",
+      "access": "Students and faculty"
+    },
+    {
+      "id": "EVT-2215",
+      "title": "Web Accessibility Clinic",
+      "club": "Frontend Community",
+      "date": "2026-12-14",
+      "time": "15:00",
+      "venue": "CS Lab 2",
+      "seatsLeft": 24,
+      "tags": [
+        "accessibility",
+        "web",
+        "frontend"
+      ],
+      "category": "Academic",
+      "registrationRequired": true,
+      "organizerEmail": "frontend@northstar.edu",
+      "registrationDeadline": "2026-12-13",
+      "access": "Students"
+    },
+    {
+      "id": "EVT-2216",
+      "title": "Faculty-Student Cricket League",
+      "club": "Sports Committee",
+      "date": "2026-12-16",
+      "time": "08:30",
+      "venue": "Main Cricket Ground",
+      "seatsLeft": 80,
+      "tags": [
+        "cricket",
+        "sports",
+        "team"
+      ],
+      "category": "Sports",
+      "registrationRequired": true,
+      "organizerEmail": "sports@northstar.edu",
+      "registrationDeadline": "2026-12-14",
+      "access": "Campus community"
+    },
+    {
+      "id": "EVT-2217",
+      "title": "Mock Product Management Interview",
+      "club": "Career Development Centre",
+      "date": "2026-12-17",
+      "time": "14:00",
+      "venue": "Training Room 1",
+      "seatsLeft": 20,
+      "tags": [
+        "career",
+        "product",
+        "interview"
+      ],
+      "category": "Career",
+      "registrationRequired": true,
+      "organizerEmail": "careers@northstar.edu",
+      "registrationDeadline": "2026-12-16",
+      "access": "Final-year students"
+    },
+    {
+      "id": "EVT-2218",
+      "title": "Startup Pitch and Mentoring",
+      "club": "Entrepreneurship Cell",
+      "date": "2026-12-19",
+      "time": "11:00",
+      "venue": "Incubation Center",
+      "seatsLeft": 36,
+      "tags": [
+        "startup",
+        "pitch",
+        "mentoring"
+      ],
+      "category": "Entrepreneurship",
+      "registrationRequired": true,
+      "organizerEmail": "ecell@northstar.edu",
+      "registrationDeadline": "2026-12-18",
+      "access": "Students and alumni"
+    },
+    {
+      "id": "EVT-2219",
+      "title": "Quantum Computing Primer",
+      "club": "Physics and Computing Society",
+      "date": "2026-12-21",
+      "time": "16:00",
+      "venue": "Seminar Hall C",
+      "seatsLeft": 45,
+      "tags": [
+        "quantum",
+        "physics",
+        "computing"
+      ],
+      "category": "Academic",
+      "registrationRequired": true,
+      "organizerEmail": "quantum@northstar.edu",
+      "registrationDeadline": "2026-12-20",
+      "access": "Students"
+    },
+    {
+      "id": "EVT-2220",
+      "title": "Debate Championship Finals",
+      "club": "Literary Society",
+      "date": "2026-12-22",
+      "time": "17:30",
+      "venue": "Auditorium B",
+      "seatsLeft": 150,
+      "tags": [
+        "debate",
+        "culture",
+        "public speaking"
+      ],
+      "category": "Culture",
+      "registrationRequired": false,
+      "organizerEmail": "literary@northstar.edu",
+      "registrationDeadline": "2026-12-22",
+      "access": "All attendees"
     }
   ]
 }

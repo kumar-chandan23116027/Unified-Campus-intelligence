@@ -11,65 +11,452 @@
     {
       "day": "Sunday",
       "meals": [
-        { "slot": "breakfast", "name": "Masala dosa with coconut chutney", "price": 45, "labels": ["vegetarian"], "waitMinutes": 6 },
-        { "slot": "lunch", "name": "Vegetable biryani bowl with raita on side", "price": 85, "labels": ["vegetarian", "vegan option"], "waitMinutes": 9 },
-        { "slot": "snacks", "name": "Paneer roll", "price": 55, "labels": ["vegetarian", "high protein"], "waitMinutes": 5 },
-        { "slot": "dinner", "name": "Dal tadka, rice, salad", "price": 70, "labels": ["vegan option"], "waitMinutes": 8 }
+        {
+          "slot": "breakfast",
+          "name": "Masala dosa with coconut chutney",
+          "price": 45,
+          "labels": [
+            "vegetarian"
+          ],
+          "waitMinutes": 6,
+          "calories": 320,
+          "portion": "standard plate",
+          "allergens": [
+            "dairy",
+            "gluten"
+          ]
+        },
+        {
+          "slot": "lunch",
+          "name": "Vegetable biryani bowl with raita on side",
+          "price": 85,
+          "labels": [
+            "vegetarian",
+            "vegan option"
+          ],
+          "waitMinutes": 9,
+          "calories": 520,
+          "portion": "standard plate",
+          "allergens": [
+            "dairy",
+            "gluten"
+          ]
+        },
+        {
+          "slot": "snacks",
+          "name": "Paneer roll",
+          "price": 55,
+          "labels": [
+            "vegetarian",
+            "high protein"
+          ],
+          "waitMinutes": 5,
+          "calories": 260,
+          "portion": "one portion",
+          "allergens": [
+            "dairy",
+            "gluten"
+          ]
+        },
+        {
+          "slot": "dinner",
+          "name": "Dal tadka, rice, salad",
+          "price": 70,
+          "labels": [
+            "vegan option"
+          ],
+          "waitMinutes": 8,
+          "calories": 480,
+          "portion": "standard plate",
+          "allergens": [
+            "dairy",
+            "gluten"
+          ]
+        }
       ]
     },
     {
       "day": "Monday",
       "meals": [
-        { "slot": "breakfast", "name": "Poha with sprouts", "price": 35, "labels": ["vegan", "light"], "waitMinutes": 4 },
-        { "slot": "lunch", "name": "Rajma rice combo", "price": 75, "labels": ["vegetarian"], "waitMinutes": 7 },
-        { "slot": "snacks", "name": "Grilled corn sandwich", "price": 50, "labels": ["vegetarian"], "waitMinutes": 6 },
-        { "slot": "dinner", "name": "Chapati, mixed veg, dal", "price": 65, "labels": ["vegan option"], "waitMinutes": 6 }
+        {
+          "slot": "breakfast",
+          "name": "Poha with sprouts",
+          "price": 35,
+          "labels": [
+            "vegan",
+            "light"
+          ],
+          "waitMinutes": 4,
+          "calories": 340,
+          "portion": "standard plate",
+          "allergens": [
+            "none"
+          ]
+        },
+        {
+          "slot": "lunch",
+          "name": "Rajma rice combo",
+          "price": 75,
+          "labels": [
+            "vegetarian"
+          ],
+          "waitMinutes": 7,
+          "calories": 540,
+          "portion": "standard plate",
+          "allergens": [
+            "gluten"
+          ]
+        },
+        {
+          "slot": "snacks",
+          "name": "Grilled corn sandwich",
+          "price": 50,
+          "labels": [
+            "vegetarian"
+          ],
+          "waitMinutes": 6,
+          "calories": 280,
+          "portion": "one portion",
+          "allergens": [
+            "gluten"
+          ]
+        },
+        {
+          "slot": "dinner",
+          "name": "Chapati, mixed veg, dal",
+          "price": 65,
+          "labels": [
+            "vegan option"
+          ],
+          "waitMinutes": 6,
+          "calories": 500,
+          "portion": "standard plate",
+          "allergens": [
+            "gluten"
+          ]
+        }
       ]
     },
     {
       "day": "Tuesday",
       "meals": [
-        { "slot": "breakfast", "name": "Idli sambar plate", "price": 40, "labels": ["vegan"], "waitMinutes": 3 },
-        { "slot": "lunch", "name": "Chole kulcha", "price": 70, "labels": ["vegetarian"], "waitMinutes": 8 },
-        { "slot": "snacks", "name": "Fruit bowl", "price": 45, "labels": ["vegan", "healthy"], "waitMinutes": 2 },
-        { "slot": "dinner", "name": "Lemon rice with curd", "price": 60, "labels": ["vegetarian"], "waitMinutes": 5 }
+        {
+          "slot": "breakfast",
+          "name": "Idli sambar plate",
+          "price": 40,
+          "labels": [
+            "vegan"
+          ],
+          "waitMinutes": 3,
+          "calories": 360,
+          "portion": "standard plate",
+          "allergens": [
+            "none"
+          ]
+        },
+        {
+          "slot": "lunch",
+          "name": "Chole kulcha",
+          "price": 70,
+          "labels": [
+            "vegetarian"
+          ],
+          "waitMinutes": 8,
+          "calories": 560,
+          "portion": "standard plate",
+          "allergens": [
+            "dairy",
+            "gluten"
+          ]
+        },
+        {
+          "slot": "snacks",
+          "name": "Fruit bowl",
+          "price": 45,
+          "labels": [
+            "vegan",
+            "healthy"
+          ],
+          "waitMinutes": 2,
+          "calories": 300,
+          "portion": "one portion",
+          "allergens": [
+            "none"
+          ]
+        },
+        {
+          "slot": "dinner",
+          "name": "Lemon rice with curd",
+          "price": 60,
+          "labels": [
+            "vegetarian"
+          ],
+          "waitMinutes": 5,
+          "calories": 520,
+          "portion": "standard plate",
+          "allergens": [
+            "dairy",
+            "gluten"
+          ]
+        }
       ]
     },
     {
       "day": "Wednesday",
       "meals": [
-        { "slot": "breakfast", "name": "Aloo paratha with curd", "price": 50, "labels": ["vegetarian"], "waitMinutes": 7 },
-        { "slot": "lunch", "name": "Soya pulao with salad", "price": 80, "labels": ["vegan", "high protein"], "waitMinutes": 6 },
-        { "slot": "snacks", "name": "Cold coffee and veggie puff", "price": 60, "labels": ["vegetarian"], "waitMinutes": 5 },
-        { "slot": "dinner", "name": "Khichdi bowl", "price": 55, "labels": ["comfort", "vegan option"], "waitMinutes": 4 }
+        {
+          "slot": "breakfast",
+          "name": "Aloo paratha with curd",
+          "price": 50,
+          "labels": [
+            "vegetarian"
+          ],
+          "waitMinutes": 7,
+          "calories": 380,
+          "portion": "standard plate",
+          "allergens": [
+            "gluten"
+          ]
+        },
+        {
+          "slot": "lunch",
+          "name": "Soya pulao with salad",
+          "price": 80,
+          "labels": [
+            "vegan",
+            "high protein"
+          ],
+          "waitMinutes": 6,
+          "calories": 580,
+          "portion": "standard plate",
+          "allergens": [
+            "none"
+          ]
+        },
+        {
+          "slot": "snacks",
+          "name": "Cold coffee and veggie puff",
+          "price": 60,
+          "labels": [
+            "vegetarian"
+          ],
+          "waitMinutes": 5,
+          "calories": 320,
+          "portion": "one portion",
+          "allergens": [
+            "gluten"
+          ]
+        },
+        {
+          "slot": "dinner",
+          "name": "Khichdi bowl",
+          "price": 55,
+          "labels": [
+            "comfort",
+            "vegan option"
+          ],
+          "waitMinutes": 4,
+          "calories": 540,
+          "portion": "standard plate",
+          "allergens": [
+            "gluten"
+          ]
+        }
       ]
     },
     {
       "day": "Thursday",
       "meals": [
-        { "slot": "breakfast", "name": "Upma with filter coffee", "price": 45, "labels": ["vegetarian"], "waitMinutes": 5 },
-        { "slot": "lunch", "name": "Paneer tikka wrap", "price": 90, "labels": ["vegetarian", "high protein"], "waitMinutes": 10 },
-        { "slot": "snacks", "name": "Bhel and lime soda", "price": 45, "labels": ["vegan option"], "waitMinutes": 4 },
-        { "slot": "dinner", "name": "Veg hakka noodles", "price": 75, "labels": ["vegetarian"], "waitMinutes": 7 }
+        {
+          "slot": "breakfast",
+          "name": "Upma with filter coffee",
+          "price": 45,
+          "labels": [
+            "vegetarian"
+          ],
+          "waitMinutes": 5,
+          "calories": 320,
+          "portion": "standard plate",
+          "allergens": [
+            "dairy",
+            "gluten"
+          ]
+        },
+        {
+          "slot": "lunch",
+          "name": "Paneer tikka wrap",
+          "price": 90,
+          "labels": [
+            "vegetarian",
+            "high protein"
+          ],
+          "waitMinutes": 10,
+          "calories": 520,
+          "portion": "standard plate",
+          "allergens": [
+            "dairy",
+            "gluten"
+          ]
+        },
+        {
+          "slot": "snacks",
+          "name": "Bhel and lime soda",
+          "price": 45,
+          "labels": [
+            "vegan option"
+          ],
+          "waitMinutes": 4,
+          "calories": 260,
+          "portion": "one portion",
+          "allergens": [
+            "dairy",
+            "gluten"
+          ]
+        },
+        {
+          "slot": "dinner",
+          "name": "Veg hakka noodles",
+          "price": 75,
+          "labels": [
+            "vegetarian"
+          ],
+          "waitMinutes": 7,
+          "calories": 480,
+          "portion": "standard plate",
+          "allergens": [
+            "dairy",
+            "gluten"
+          ]
+        }
       ]
     },
     {
       "day": "Friday",
       "meals": [
-        { "slot": "breakfast", "name": "Oats banana bowl", "price": 55, "labels": ["vegan", "healthy"], "waitMinutes": 3 },
-        { "slot": "lunch", "name": "South Indian thali", "price": 95, "labels": ["vegetarian"], "waitMinutes": 11 },
-        { "slot": "snacks", "name": "Veg momos", "price": 65, "labels": ["vegetarian"], "waitMinutes": 8 },
-        { "slot": "dinner", "name": "Palak dal with jeera rice", "price": 70, "labels": ["vegan option"], "waitMinutes": 5 }
+        {
+          "slot": "breakfast",
+          "name": "Oats banana bowl",
+          "price": 55,
+          "labels": [
+            "vegan",
+            "healthy"
+          ],
+          "waitMinutes": 3,
+          "calories": 340,
+          "portion": "standard plate",
+          "allergens": [
+            "none"
+          ]
+        },
+        {
+          "slot": "lunch",
+          "name": "South Indian thali",
+          "price": 95,
+          "labels": [
+            "vegetarian"
+          ],
+          "waitMinutes": 11,
+          "calories": 540,
+          "portion": "standard plate",
+          "allergens": [
+            "gluten"
+          ]
+        },
+        {
+          "slot": "snacks",
+          "name": "Veg momos",
+          "price": 65,
+          "labels": [
+            "vegetarian"
+          ],
+          "waitMinutes": 8,
+          "calories": 280,
+          "portion": "one portion",
+          "allergens": [
+            "gluten"
+          ]
+        },
+        {
+          "slot": "dinner",
+          "name": "Palak dal with jeera rice",
+          "price": 70,
+          "labels": [
+            "vegan option"
+          ],
+          "waitMinutes": 5,
+          "calories": 500,
+          "portion": "standard plate",
+          "allergens": [
+            "gluten"
+          ]
+        }
       ]
     },
     {
       "day": "Saturday",
       "meals": [
-        { "slot": "breakfast", "name": "Medu vada sambar", "price": 45, "labels": ["vegan"], "waitMinutes": 5 },
-        { "slot": "lunch", "name": "Kadhi chawal", "price": 70, "labels": ["vegetarian"], "waitMinutes": 6 },
-        { "slot": "snacks", "name": "Club sandwich", "price": 75, "labels": ["vegetarian"], "waitMinutes": 9 },
-        { "slot": "dinner", "name": "Veg fried rice with soup", "price": 80, "labels": ["vegan option"], "waitMinutes": 7 }
+        {
+          "slot": "breakfast",
+          "name": "Medu vada sambar",
+          "price": 45,
+          "labels": [
+            "vegan"
+          ],
+          "waitMinutes": 5,
+          "calories": 360,
+          "portion": "standard plate",
+          "allergens": [
+            "none"
+          ]
+        },
+        {
+          "slot": "lunch",
+          "name": "Kadhi chawal",
+          "price": 70,
+          "labels": [
+            "vegetarian"
+          ],
+          "waitMinutes": 6,
+          "calories": 560,
+          "portion": "standard plate",
+          "allergens": [
+            "dairy",
+            "gluten"
+          ]
+        },
+        {
+          "slot": "snacks",
+          "name": "Club sandwich",
+          "price": 75,
+          "labels": [
+            "vegetarian"
+          ],
+          "waitMinutes": 9,
+          "calories": 300,
+          "portion": "one portion",
+          "allergens": [
+            "dairy",
+            "gluten"
+          ]
+        },
+        {
+          "slot": "dinner",
+          "name": "Veg fried rice with soup",
+          "price": 80,
+          "labels": [
+            "vegan option"
+          ],
+          "waitMinutes": 7,
+          "calories": 520,
+          "portion": "standard plate",
+          "allergens": [
+            "dairy",
+            "gluten"
+          ]
+        }
       ]
     }
-  ]
+  ],
+  "inventoryStatus": "Live kitchen count",
+  "allergyNotice": "Students with severe allergies should confirm ingredients directly with the cafeteria manager."
 }
