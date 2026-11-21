@@ -1,6 +1,6 @@
 {
   "sourceName": "Raman Central Library",
-  "lastSynced": "2026-06-14T09:15:00+05:30",
+  "lastSynced": "2026-11-21T09:15:00+05:30",
   "books": [
     {
       "id": "LIB-1001",
@@ -32,7 +32,7 @@
       "availability": "checked_out",
       "copies": 0,
       "location": "Ground Floor, Systems Shelf D4",
-      "dueDate": "2026-06-18",
+      "dueDate": "2026-11-24",
       "tags": ["sql", "normalization", "transactions"]
     },
     {
@@ -65,7 +65,7 @@
       "availability": "checked_out",
       "copies": 0,
       "location": "Electronics Shelf E3",
-      "dueDate": "2026-06-21",
+      "dueDate": "2026-11-26",
       "tags": ["iot", "sensors", "microcontrollers"]
     },
     {
@@ -89,6 +89,138 @@
       "location": "Innovation Lab Reading Bay",
       "dueDate": null,
       "tags": ["mcp", "tools", "llm", "assistant"]
+    },
+    {
+      "id": "LIB-1009",
+      "title": "Clean Code",
+      "author": "Robert C. Martin",
+      "subject": "Software Engineering",
+      "availability": "available",
+      "copies": 4,
+      "location": "First Floor, Software Shelf W3",
+      "dueDate": null,
+      "tags": ["coding", "maintainability", "best practices"]
+    },
+    {
+      "id": "LIB-1010",
+      "title": "Designing Data-Intensive Applications",
+      "author": "Martin Kleppmann",
+      "subject": "Distributed Systems",
+      "availability": "available",
+      "copies": 2,
+      "location": "Second Floor, Systems Shelf S1",
+      "dueDate": null,
+      "tags": ["distributed systems", "databases", "scalability"]
+    },
+    {
+      "id": "LIB-1011",
+      "title": "Computer Networking: A Top-Down Approach",
+      "author": "Jim Kurose and Keith Ross",
+      "subject": "Computer Networks",
+      "availability": "available",
+      "copies": 6,
+      "location": "Ground Floor, Electronics Shelf N2",
+      "dueDate": null,
+      "tags": ["networking", "tcp ip", "protocols"]
+    },
+    {
+      "id": "LIB-1012",
+      "title": "Introduction to the Theory of Computation",
+      "author": "Michael Sipser",
+      "subject": "Theoretical Computer Science",
+      "availability": "checked_out",
+      "copies": 0,
+      "location": "Second Floor, Theory Shelf T1",
+      "dueDate": "2026-11-27",
+      "tags": ["automata", "complexity", "computation"]
+    },
+    {
+      "id": "LIB-1013",
+      "title": "Cryptography and Network Security",
+      "author": "William Stallings",
+      "subject": "Cybersecurity",
+      "availability": "available",
+      "copies": 3,
+      "location": "First Floor, Security Shelf C4",
+      "dueDate": null,
+      "tags": ["cryptography", "security", "network"]
+    },
+    {
+      "id": "LIB-1014",
+      "title": "Deep Learning",
+      "author": "Ian Goodfellow, Yoshua Bengio, Aaron Courville",
+      "subject": "Machine Learning",
+      "availability": "available",
+      "copies": 2,
+      "location": "Second Floor, AI Shelf A4",
+      "dueDate": null,
+      "tags": ["deep learning", "neural networks", "python"]
+    },
+    {
+      "id": "LIB-1015",
+      "title": "Python Crash Course",
+      "author": "Eric Matthes",
+      "subject": "Programming",
+      "availability": "available",
+      "copies": 8,
+      "location": "Ground Floor, Programming Shelf P2",
+      "dueDate": null,
+      "tags": ["python", "beginner", "projects"]
+    },
+    {
+      "id": "LIB-1016",
+      "title": "The Pragmatic Programmer",
+      "author": "David Thomas and Andrew Hunt",
+      "subject": "Software Development",
+      "availability": "checked_out",
+      "copies": 0,
+      "location": "First Floor, Career Shelf P5",
+      "dueDate": "2026-11-24",
+      "tags": ["career", "engineering", "pragmatic"]
+    },
+    {
+      "id": "LIB-1017",
+      "title": "Linear Algebra and Its Applications",
+      "author": "David C. Lay",
+      "subject": "Mathematics",
+      "availability": "available",
+      "copies": 5,
+      "location": "Ground Floor, Mathematics Shelf M1",
+      "dueDate": null,
+      "tags": ["matrices", "vectors", "algebra"]
+    },
+    {
+      "id": "LIB-1018",
+      "title": "System Design Interview",
+      "author": "Alex Xu",
+      "subject": "Interview Preparation",
+      "availability": "available",
+      "copies": 3,
+      "location": "Career Corner C2",
+      "dueDate": null,
+      "tags": ["system design", "placement", "scalability"]
+    },
+    {
+      "id": "LIB-1019",
+      "title": "Arduino Robotics",
+      "author": "John Boxall",
+      "subject": "Robotics",
+      "availability": "available",
+      "copies": 4,
+      "location": "Electronics Shelf E5",
+      "dueDate": null,
+      "tags": ["arduino", "robotics", "embedded"]
+    },
+    {
+      "id": "LIB-1020",
+      "title": "Research Methodology",
+      "author": "C. R. Kothari",
+      "subject": "Academic Research",
+      "availability": "checked_out",
+      "copies": 0,
+      "location": "Second Floor, Research Shelf R1",
+      "dueDate": "2026-11-29",
+      "tags": ["research", "thesis", "statistics"]
     }
   ]
 }

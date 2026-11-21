@@ -1,12 +1,12 @@
 {
   "sourceName": "Academic Handbook and Notices",
-  "lastSynced": "2026-06-14T09:20:00+05:30",
+  "lastSynced": "2026-11-21T09:20:00+05:30",
   "entries": [
     {
       "id": "ACD-3001",
       "type": "deadline",
       "title": "Course registration closes",
-      "date": "2026-06-18",
+      "date": "2026-11-23",
       "summary": "Semester V course registration closes at 5:00 PM. Late registration needs advisor approval.",
       "tags": ["registration", "deadline", "semester"]
     },
@@ -22,7 +22,7 @@
       "id": "ACD-3003",
       "type": "deadline",
       "title": "Scholarship renewal forms",
-      "date": "2026-06-21",
+      "date": "2026-11-25",
       "summary": "Merit scholarship renewal forms must be submitted through the student portal before midnight.",
       "tags": ["scholarship", "forms", "finance"]
     },
@@ -30,7 +30,7 @@
       "id": "ACD-3004",
       "type": "notice",
       "title": "Mid-semester exam timetable",
-      "date": "2026-06-24",
+      "date": "2026-11-28",
       "summary": "The revised mid-semester timetable is available in the academics office and student portal.",
       "tags": ["exam", "timetable", "mid semester"]
     },
@@ -49,6 +49,70 @@
       "date": null,
       "summary": "Final project submissions must include source code, README, architecture notes, test evidence, and a demo video link.",
       "tags": ["project", "submission", "demo"]
+    },
+    {
+      "id": "ACD-3007",
+      "type": "deadline",
+      "title": "Minor project progress review",
+      "date": "2026-11-26",
+      "summary": "Semester V project teams must submit their progress presentation and working prototype report to the department.",
+      "tags": ["project", "review", "semester"]
+    },
+    {
+      "id": "ACD-3008",
+      "type": "notice",
+      "title": "Online course credit approval",
+      "date": "2026-11-30",
+      "summary": "Students seeking approval for MOOC course credits must submit certificates and learning plans before 4:00 PM.",
+      "tags": ["mooc", "credit", "certificate"]
+    },
+    {
+      "id": "ACD-3009",
+      "type": "deadline",
+      "title": "Backlog examination registration",
+      "date": "2026-12-03",
+      "summary": "Backlog exam applications and fee payments must be completed through the student portal.",
+      "tags": ["exam", "backlog", "registration"]
+    },
+    {
+      "id": "ACD-3010",
+      "type": "policy",
+      "title": "Revaluation request process",
+      "date": null,
+      "summary": "Revaluation requests are accepted for seven working days after result publication and require a fee per subject.",
+      "tags": ["revaluation", "results", "examination"]
+    },
+    {
+      "id": "ACD-3011",
+      "type": "notice",
+      "title": "Departmental lab inventory check",
+      "date": "2026-12-05",
+      "summary": "Laboratory in-charges will verify hardware, software licenses, and safety equipment before the semester closure.",
+      "tags": ["lab", "inventory", "department"]
+    },
+    {
+      "id": "ACD-3012",
+      "type": "deadline",
+      "title": "Winter vacation travel declaration",
+      "date": "2026-12-08",
+      "summary": "Hostel residents planning to leave campus during winter break must complete the travel declaration form.",
+      "tags": ["hostel", "travel", "holiday"]
+    },
+    {
+      "id": "ACD-3013",
+      "type": "policy",
+      "title": "Laptop and device security policy",
+      "date": null,
+      "summary": "Campus Wi-Fi and laboratory networks require device registration, updated antivirus software, and approved security settings.",
+      "tags": ["cybersecurity", "wifi", "devices"]
+    },
+    {
+      "id": "ACD-3014",
+      "type": "notice",
+      "title": "End-semester practical schedule",
+      "date": "2026-12-10",
+      "summary": "Laboratory practical timetables will be published by department coordinators one week before the examinations.",
+      "tags": ["practical", "exam", "schedule"]
     }
   ]
 }

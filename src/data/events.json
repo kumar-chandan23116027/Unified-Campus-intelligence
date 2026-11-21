@@ -1,12 +1,12 @@
 {
   "sourceName": "Student Activities Calendar",
-  "lastSynced": "2026-06-14T09:05:00+05:30",
+  "lastSynced": "2026-11-21T09:05:00+05:30",
   "events": [
     {
       "id": "EVT-2201",
       "title": "MCP Tool-Building Workshop",
       "club": "AI Student Chapter",
-      "date": "2026-06-14",
+      "date": "2026-11-21",
       "time": "15:00",
       "venue": "Innovation Lab 2",
       "seatsLeft": 18,
@@ -16,7 +16,7 @@
       "id": "EVT-2202",
       "title": "Tech Fest Volunteer Briefing",
       "club": "TechFest Core Team",
-      "date": "2026-06-15",
+      "date": "2026-11-22",
       "time": "17:30",
       "venue": "Auditorium A",
       "seatsLeft": 64,
@@ -26,7 +26,7 @@
       "id": "EVT-2203",
       "title": "Placement DSA Sprint",
       "club": "Coding Club",
-      "date": "2026-06-16",
+      "date": "2026-11-23",
       "time": "18:00",
       "venue": "CS Lab 4",
       "seatsLeft": 12,
@@ -36,7 +36,7 @@
       "id": "EVT-2204",
       "title": "Open Mic and Poetry Night",
       "club": "Literary Society",
-      "date": "2026-06-17",
+      "date": "2026-11-24",
       "time": "19:00",
       "venue": "Amphitheatre",
       "seatsLeft": 120,
@@ -46,7 +46,7 @@
       "id": "EVT-2205",
       "title": "Cloud Deployment Clinic",
       "club": "Developer Student Club",
-      "date": "2026-06-18",
+      "date": "2026-11-25",
       "time": "16:00",
       "venue": "Seminar Hall B",
       "seatsLeft": 22,
@@ -56,11 +56,81 @@
       "id": "EVT-2206",
       "title": "Robotics Maze Challenge",
       "club": "Robotics Club",
-      "date": "2026-06-20",
+      "date": "2026-11-27",
       "time": "10:00",
       "venue": "Mechanical Workshop",
       "seatsLeft": 8,
       "tags": ["robotics", "iot", "competition"]
+    },
+    {
+      "id": "EVT-2207",
+      "title": "Cybersecurity Capture the Flag",
+      "club": "Cyber Defense Society",
+      "date": "2026-11-28",
+      "time": "09:30",
+      "venue": "Central Computing Lab",
+      "seatsLeft": 34,
+      "tags": ["cybersecurity", "ctf", "linux", "competition"]
+    },
+    {
+      "id": "EVT-2208",
+      "title": "Design Thinking for Student Projects",
+      "club": "Innovation Cell",
+      "date": "2026-11-29",
+      "time": "14:00",
+      "venue": "Design Studio",
+      "seatsLeft": 26,
+      "tags": ["design thinking", "innovation", "projects"]
+    },
+    {
+      "id": "EVT-2209",
+      "title": "Campus Alumni Networking Meet",
+      "club": "Alumni Relations",
+      "date": "2026-12-02",
+      "time": "17:00",
+      "venue": "Conference Hall",
+      "seatsLeft": 48,
+      "tags": ["alumni", "networking", "career"]
+    },
+    {
+      "id": "EVT-2210",
+      "title": "Resume and Interview Readiness",
+      "club": "Career Development Centre",
+      "date": "2026-12-04",
+      "time": "15:30",
+      "venue": "Training Room 3",
+      "seatsLeft": 40,
+      "tags": ["placement", "resume", "interview"]
+    },
+    {
+      "id": "EVT-2211",
+      "title": "Inter-Department Sports Meet",
+      "club": "Sports Committee",
+      "date": "2026-12-06",
+      "time": "08:00",
+      "venue": "Central Sports Ground",
+      "seatsLeft": 95,
+      "tags": ["sports", "team", "fitness", "inter department"]
+    },
+    {
+      "id": "EVT-2212",
+      "title": "Generative AI Project Showcase",
+      "club": "Applied AI Forum",
+      "date": "2026-12-09",
+      "time": "16:30",
+      "venue": "Innovation Hall",
+      "seatsLeft": 72,
+      "tags": ["generative ai", "projects", "demo", "llm"]
+    },
+    {
+      "id": "EVT-2213",
+      "title": "Community Clean-up and Sustainability Drive",
+      "club": "Green Campus Society",
+      "date": "2026-12-12",
+      "time": "07:30",
+      "venue": "North Campus Gate",
+      "seatsLeft": 55,
+      "tags": ["sustainability", "community", "environment"]
     }
   ]
 }
