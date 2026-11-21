@@ -2,7 +2,7 @@
 
 A unified campus dashboard that brings together **Library**, **Cafeteria**, **Events**, and **Academics** data into one clean interface — powered by an MCP-style architecture and an AI assistant router.
 
-**Live Demo → [https://campus-intel.onrender.com](https://campus-intel.onrender.com)**
+**Live Demo → [https://mars-web-d-project-1.onrender.com](https://mars-web-d-project-1.onrender.com)**
 
 ---
 
