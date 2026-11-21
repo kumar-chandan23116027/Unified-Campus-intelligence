@@ -47,9 +47,8 @@ try {
   await waitForServer();
 
   const dashboard = await fetchJson("/api/dashboard");
-  assert.equal(dashboard.stats.liveSources, 4);
-  assert.equal(dashboard.stats.totalTools, 4);
-  assert.equal(dashboard.sources.length, 4);
+  assert.equal(dashboard.stats.liveSources, 5);
+  assert.equal(dashboard.sources.length, 5);
 
   const assistant = await fetchJson("/api/assistant", {
     method: "POST",

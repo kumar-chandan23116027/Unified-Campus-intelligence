@@ -24,6 +24,7 @@ export const eventsSource = {
     return {
       sourceName: data.sourceName,
       lastSynced: data.lastSynced,
+      dataStatus: data.dataStatus,
       metric: String(nextEvents.length),
       metricLabel: "upcoming events",
       secondary: `${seats} seats visible`,

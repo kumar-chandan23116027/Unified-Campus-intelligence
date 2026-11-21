@@ -1,0 +1,39 @@
+{
+  "sourceName": "Northstar Residential Services",
+  "lastSynced": "2026-11-21T09:30:00+05:30",
+  "blocks": [
+    {
+      "id": "HTL-001",
+      "name": "Nalanda House",
+      "gender": "women",
+      "occupancy": 380,
+      "capacity": 420,
+      "warden": "Dr. Kavita Rao",
+      "nightOutForm": "Student portal",
+      "facilities": ["mess", "laundry", "reading room", "wifi"],
+      "notices": ["Hot water maintenance on Sunday from 6:00 AM to 10:00 AM"]
+    },
+    {
+      "id": "HTL-002",
+      "name": "Aryabhata House",
+      "gender": "men",
+      "occupancy": 405,
+      "capacity": 450,
+      "warden": "Mr. Vivek Sinha",
+      "nightOutForm": "Student portal",
+      "facilities": ["mess", "gym", "laundry", "wifi"],
+      "notices": ["Room renewal deadline is 14 December"]
+    },
+    {
+      "id": "HTL-003",
+      "name": "Kalpana House",
+      "gender": "co-ed",
+      "occupancy": 120,
+      "capacity": 150,
+      "warden": "Ms. Ananya Bose",
+      "nightOutForm": "Student portal",
+      "facilities": ["mess", "study lounge", "medical support", "wifi"],
+      "notices": ["Winter vacation declaration closes 8 December"]
+    }
+  ]
+}

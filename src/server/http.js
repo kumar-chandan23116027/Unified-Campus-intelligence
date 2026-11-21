@@ -1,7 +1,8 @@
 import { createReadStream } from "node:fs";
-import { readFile, stat } from "node:fs/promises";
+import { stat } from "node:fs/promises";
 import { extname, join, normalize, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { badRequest, payloadTooLarge } from "./errors.js";
 
 const ROOT_DIR = resolve(fileURLToPath(new URL("../../", import.meta.url)));
 const PUBLIC_DIR = join(ROOT_DIR, "public");
@@ -32,14 +33,24 @@ export function sendText(response, statusCode, text) {
 
 export async function readJsonBody(request) {
   const chunks = [];
+  const limit = Number(process.env.BODY_LIMIT_BYTES || 65536);
+  let size = 0;
   for await (const chunk of request) {
+    size += chunk.length;
+    if (size > limit) {
+      throw payloadTooLarge();
+    }
     chunks.push(chunk);
   }
   const raw = Buffer.concat(chunks).toString("utf8");
   if (!raw.trim()) {
     return {};
   }
-  return JSON.parse(raw);
+  try {
+    return JSON.parse(raw);
+  } catch {
+    throw badRequest("Malformed JSON body");
+  }
 }
 
 export async function serveStatic(request, response) {
@@ -67,11 +78,6 @@ export async function serveStatic(request, response) {
     });
     createReadStream(absolutePath).pipe(response);
   } catch {
-    const fallback = await readFile(join(PUBLIC_DIR, "index.html"));
-    response.writeHead(200, {
-      "content-type": MIME_TYPES[".html"],
-      "cache-control": "no-cache"
-    });
-    response.end(fallback);
+    sendText(response, 404, "Not found");
   }
 }

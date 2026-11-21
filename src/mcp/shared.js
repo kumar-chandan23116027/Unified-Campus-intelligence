@@ -1,9 +1,15 @@
 import { readFile } from "node:fs/promises";
+import { readSourceDocument } from "../data/store.js";
+import { readCampusData } from "../data/adapters.js";
 
 const DATA_DIR = new URL("../data/", import.meta.url);
 const DAY_NAMES = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 export async function readJsonData(fileName) {
+  const source = fileName.replace(/\.json$/, "");
+  if (["library", "cafeteria", "events", "academics", "hostel"].includes(source)) {
+    return readCampusData(source);
+  }
   const raw = await readFile(new URL(fileName, DATA_DIR), "utf8");
   return JSON.parse(raw);
 }

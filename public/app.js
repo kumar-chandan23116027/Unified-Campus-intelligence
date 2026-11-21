@@ -3,7 +3,8 @@
 ══════════════════════════════════════════ */
 const state = {
   dashboard: null,
-  messages: []
+  messages: [],
+  selectedAdminRecord: null
 };
 
 /* ══════════════════════════════════════════
@@ -33,6 +34,15 @@ const elements = {
   traceCount:       document.querySelector("#trace-count"),
   toolTrace:        document.querySelector("#tool-trace"),
   suggestions:      document.querySelector("#suggestions"),
+  adminKey:         document.querySelector("#admin-key"),
+  adminSource:      document.querySelector("#admin-source"),
+  adminLoad:        document.querySelector("#admin-load"),
+  adminStatus:      document.querySelector("#admin-status"),
+  adminRecordList:  document.querySelector("#admin-record-list"),
+  adminJson:        document.querySelector("#admin-json"),
+  adminCreate:      document.querySelector("#admin-create"),
+  adminUpdate:      document.querySelector("#admin-update"),
+  adminDelete:      document.querySelector("#admin-delete"),
 };
 
 /* ══════════════════════════════════════════
@@ -182,7 +192,7 @@ function renderDashboard(snapshot) {
   state.dashboard = snapshot;
   elements.metricSources.textContent = snapshot.stats.liveSources;
   elements.metricTools.textContent   = snapshot.stats.totalTools;
-  elements.metricSync.textContent    = "Live";
+  elements.metricSync.textContent    = "Rule-based";
   elements.campusName.textContent    = snapshot.stats.campusName;
   elements.todayLabel.textContent    = formatter.format(new Date(snapshot.stats.updatedAt));
   renderHealth(snapshot.sources);
@@ -250,6 +260,100 @@ function renderTrace(trace = []) {
         )
         .join("")
     : `<div class="trace-item"><strong>No tool calls yet</strong><span>idle</span></div>`;
+}
+
+/* ══════════════════════════════════════════
+   Admin
+══════════════════════════════════════════ */
+function adminHeaders() {
+  return {
+    authorization: `Bearer ${elements.adminKey.value.trim()}`,
+    "content-type": "application/json"
+  };
+}
+
+function adminRecordId(record) {
+  return record.id || record.day;
+}
+
+async function loadAdminRecords() {
+  elements.adminStatus.textContent = "Loading…";
+  try {
+    const payload = await fetchJson(`/api/admin/${elements.adminSource.value}`, {
+      headers: adminHeaders()
+    });
+    const documentPayload = payload.result;
+    const source = elements.adminSource.value;
+    const collection = source === "library" ? "books"
+      : source === "cafeteria" ? "menu"
+      : source === "academics" ? "entries"
+      : source === "hostel" ? "blocks"
+      : "events";
+    const records = documentPayload[collection] || [];
+    elements.adminRecordList.innerHTML = records.length
+      ? records.map((record) => `
+          <div class="admin-record">
+            <strong>${escapeHtml(record.title || record.name || record.day || record.id)}</strong>
+            <button type="button" class="btn-ghost admin-select" data-id="${escapeHtml(adminRecordId(record))}">Edit</button>
+          </div>
+        `).join("")
+      : "<p>No records.</p>";
+    elements.adminStatus.textContent = `${records.length} records loaded`;
+  } catch (error) {
+    elements.adminStatus.textContent = error.message;
+  }
+}
+
+async function createAdminRecord() {
+  try {
+    const record = JSON.parse(elements.adminJson.value);
+    await fetchJson(`/api/admin/${elements.adminSource.value}`, {
+      method: "POST",
+      headers: adminHeaders(),
+      body: JSON.stringify(record)
+    });
+    elements.adminStatus.textContent = "Record created";
+    await loadAdminRecords();
+  } catch (error) {
+    elements.adminStatus.textContent = error.message;
+  }
+}
+
+async function updateAdminRecord() {
+  if (!state.selectedAdminRecord) {
+    elements.adminStatus.textContent = "Select a record to edit";
+    return;
+  }
+  try {
+    const record = JSON.parse(elements.adminJson.value);
+    await fetchJson(`/api/admin/${elements.adminSource.value}/${encodeURIComponent(state.selectedAdminRecord)}`, {
+      method: "PATCH",
+      headers: adminHeaders(),
+      body: JSON.stringify(record)
+    });
+    elements.adminStatus.textContent = "Record updated";
+    await loadAdminRecords();
+  } catch (error) {
+    elements.adminStatus.textContent = error.message;
+  }
+}
+
+async function deleteAdminRecord() {
+  if (!state.selectedAdminRecord) {
+    elements.adminStatus.textContent = "Select a record to delete";
+    return;
+  }
+  try {
+    await fetchJson(`/api/admin/${elements.adminSource.value}/${encodeURIComponent(state.selectedAdminRecord)}`, {
+      method: "DELETE",
+      headers: adminHeaders()
+    });
+    state.selectedAdminRecord = null;
+    elements.adminStatus.textContent = "Record deleted";
+    await loadAdminRecords();
+  } catch (error) {
+    elements.adminStatus.textContent = error.message;
+  }
 }
 
 /* ══════════════════════════════════════════
@@ -326,9 +430,29 @@ elements.assistantInput.addEventListener("keydown", (event) => {
   }
 });
 
+elements.adminLoad.addEventListener("click", loadAdminRecords);
+elements.adminCreate.addEventListener("click", createAdminRecord);
+elements.adminUpdate.addEventListener("click", updateAdminRecord);
+elements.adminDelete.addEventListener("click", deleteAdminRecord);
+elements.adminRecordList.addEventListener("click", async (event) => {
+  const button = event.target.closest(".admin-select");
+  if (!button) return;
+  state.selectedAdminRecord = button.dataset.id;
+  try {
+    const payload = await fetchJson(
+      `/api/admin/${elements.adminSource.value}/${encodeURIComponent(state.selectedAdminRecord)}`,
+      { headers: adminHeaders() }
+    );
+    elements.adminJson.value = JSON.stringify(payload.result, null, 2);
+    elements.adminStatus.textContent = `Selected ${state.selectedAdminRecord}`;
+  } catch (error) {
+    elements.adminStatus.textContent = error.message;
+  }
+});
+
 /* ══════════════════════════════════════════
    Init
 ══════════════════════════════════════════ */
 renderTrace();
-addMessage("assistant", "Library, Cafeteria, Events, and Academics are online.");
+addMessage("assistant", "Library, Cafeteria, Events, Academics, and Hostel are available. This assistant uses a rule-based fallback.");
 loadDashboard();

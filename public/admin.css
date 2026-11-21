@@ -1,0 +1,10 @@
+.admin-layout { display:grid; grid-template-columns:minmax(220px, 320px) 1fr; gap:18px; }
+.admin-panel { background:#fff; border:1px solid #dfe4ea; border-radius:12px; padding:18px; }
+.admin-panel label { display:block; font-size:.82rem; font-weight:700; margin:12px 0 6px; }
+.admin-panel input, .admin-panel select, .admin-panel textarea { width:100%; box-sizing:border-box; border:1px solid #ccd5df; border-radius:8px; padding:10px; font:inherit; }
+.admin-panel textarea { min-height:260px; font-family:ui-monospace, monospace; }
+.admin-actions { display:flex; gap:8px; margin-top:12px; }
+.admin-record { padding:10px 0; border-bottom:1px solid #edf0f3; }
+.admin-record button { margin-right:6px; }
+.admin-status { min-height:24px; color:#526071; margin-top:10px; }
+@media (max-width:760px) { .admin-layout { grid-template-columns:1fr; } }

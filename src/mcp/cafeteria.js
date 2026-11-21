@@ -29,6 +29,7 @@ export const cafeteriaSource = {
     return {
       sourceName: data.sourceName,
       lastSynced: data.lastSynced,
+      dataStatus: data.dataStatus,
       metric: String(today.meals.length),
       metricLabel: `${today.day} meals`,
       secondary: `${veganOptions.length} vegan-friendly`,

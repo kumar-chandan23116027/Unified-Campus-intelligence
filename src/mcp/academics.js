@@ -31,6 +31,7 @@ export const academicsSource = {
     return {
       sourceName: data.sourceName,
       lastSynced: data.lastSynced,
+      dataStatus: data.dataStatus,
       metric: String(dated.length),
       metricLabel: "dated notices",
       secondary: `${policies} active policies`,

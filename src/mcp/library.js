@@ -23,6 +23,7 @@ export const librarySource = {
     return {
       sourceName: data.sourceName,
       lastSynced: data.lastSynced,
+      dataStatus: data.dataStatus,
       metric: `${available.length}/${data.books.length}`,
       metricLabel: "titles available",
       secondary: `${checkedOut} checked out`,

@@ -7,6 +7,16 @@ export function listTools(source) {
 }
 
 export async function callTool(source, name, args = {}) {
+  if (!args || typeof args !== "object" || Array.isArray(args)) {
+    const error = new Error("Tool arguments must be a JSON object");
+    error.code = -32602;
+    throw error;
+  }
+  if (typeof args.query === "string" && args.query.length > 2000) {
+    const error = new Error("Tool query must be at most 2000 characters");
+    error.code = -32602;
+    throw error;
+  }
   const tool = source.tools.find((entry) => entry.name === name);
   if (!tool) {
     const error = new Error(`Tool "${name}" not found on source "${source.id}"`);

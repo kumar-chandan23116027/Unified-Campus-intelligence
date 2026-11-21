@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/admin.css" />
   </head>
   <body>
 
@@ -25,11 +26,12 @@
         <button class="nav-btn" data-page="sources">Sources</button>
         <button class="nav-btn" data-page="assistant">Assistant</button>
         <button class="nav-btn" data-page="map">MCP Map</button>
+        <button class="nav-btn" data-page="admin">Admin</button>
       </nav>
 
       <div class="topnav-right">
         <span class="live-badge">
-          <span class="pulse-dot"></span>Live
+          <span class="pulse-dot"></span>Demo Data
         </span>
         <span class="student-tag">Student View</span>
       </div>
@@ -53,6 +55,7 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v4m0 12v4M2 12h4m12 0h4"/></svg>
         Map
       </button>
+      <button class="mnav-btn" data-page="admin">Admin</button>
     </nav>
 
     <!-- ══════════════════════════════════════════════
@@ -77,7 +80,7 @@
             <span>MCP Tools</span>
           </div>
           <div class="stat-card">
-            <strong id="metric-sync">Live</strong>
+            <strong id="metric-sync">Rule-based</strong>
             <span>Query mode</span>
           </div>
         </div>
@@ -98,7 +101,7 @@
       <!-- Source health cards (mini preview) -->
       <section class="home-sources">
         <div class="section-header">
-          <h2>Live Sources</h2>
+          <h2>Campus Sources</h2>
           <span id="source-count" class="badge">0</span>
         </div>
         <div id="source-health-list" class="health-grid" aria-live="polite"></div>
@@ -145,7 +148,7 @@
     <main id="page-assistant" class="page">
       <div class="page-header">
         <div>
-          <p class="eyebrow">Embedded AI Assistant</p>
+          <p class="eyebrow">Campus Assistant · Rule-based fallback</p>
           <h1>Ask Campus Data</h1>
         </div>
         <span class="status-chip" id="assistant-state">Ready</span>
@@ -245,7 +248,7 @@
           <div class="step">
             <span class="step-num">2</span>
             <strong>Router picks the right MCP</strong>
-            <p>The AI router decides which source server(s) to call based on your query.</p>
+            <p>The rule-based router decides which source server(s) to call based on your query.</p>
           </div>
           <div class="step">
             <span class="step-num">3</span>
@@ -258,6 +261,47 @@
             <p>Results are merged and returned in plain language with source tags.</p>
           </div>
         </div>
+      </div>
+    </main>
+
+    <!-- ══════════════════════════════════════════════
+         PAGE: ADMIN
+    ══════════════════════════════════════════════ -->
+    <main id="page-admin" class="page">
+      <div class="page-header">
+        <div>
+          <p class="eyebrow">Authorized data management</p>
+          <h1>Campus Admin</h1>
+        </div>
+      </div>
+
+      <div class="admin-layout">
+        <section class="admin-panel">
+          <label for="admin-key">Admin bearer key</label>
+          <input id="admin-key" type="password" autocomplete="off" placeholder="ADMIN_API_KEY" />
+          <label for="admin-source">Data source</label>
+          <select id="admin-source">
+            <option value="library">Library</option>
+            <option value="cafeteria">Cafeteria</option>
+            <option value="events">Events</option>
+            <option value="academics">Academics</option>
+            <option value="hostel">Hostel</option>
+          </select>
+          <button id="admin-load" class="btn-primary" type="button">Load records</button>
+          <div id="admin-status" class="admin-status" aria-live="polite"></div>
+        </section>
+
+        <section class="admin-panel">
+          <label for="admin-record-list">Existing records</label>
+          <div id="admin-record-list"></div>
+          <label for="admin-json">Create or replace record JSON</label>
+          <textarea id="admin-json" spellcheck="false">{}</textarea>
+          <div class="admin-actions">
+            <button id="admin-create" class="btn-primary" type="button">Create</button>
+            <button id="admin-update" class="btn-ghost" type="button">Update selected</button>
+            <button id="admin-delete" class="btn-ghost" type="button">Delete selected</button>
+          </div>
+        </section>
       </div>
     </main>
 

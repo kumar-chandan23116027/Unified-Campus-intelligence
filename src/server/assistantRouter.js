@@ -1,61 +1,13 @@
 import { sources } from "../mcp/registry.js";
 import { callTool, listTools } from "./mcpRuntime.js";
-
-const SOURCE_KEYWORDS = {
-  library: [
-    "book",
-    "borrow",
-    "copy",
-    "copies",
-    "library",
-    "manual",
-    "read",
-    "shelf",
-    "title"
-  ],
-  cafeteria: [
-    "breakfast",
-    "cafe",
-    "cafeteria",
-    "dinner",
-    "eat",
-    "food",
-    "lunch",
-    "menu",
-    "snack",
-    "vegan"
-  ],
-  events: [
-    "club",
-    "event",
-    "fest",
-    "hackathon",
-    "session",
-    "tech fest",
-    "today",
-    "tomorrow",
-    "volunteer",
-    "workshop"
-  ],
-  academics: [
-    "academic",
-    "attendance",
-    "deadline",
-    "exam",
-    "handbook",
-    "policy",
-    "registration",
-    "scholarship",
-    "submission",
-    "timetable"
-  ]
-};
+import { detectIntents, isUnsupportedProvider } from "../assistant/intent.js";
 
 const TOOL_BY_SOURCE = {
   library: "search_library",
   cafeteria: "get_menu",
   events: "find_events",
-  academics: "search_academics"
+  academics: "search_academics",
+  hostel: "find_hostel"
 };
 
 function normalize(value) {
@@ -63,17 +15,7 @@ function normalize(value) {
 }
 
 function selectSources(message) {
-  const normalized = normalize(message);
-  const matched = sources.filter((source) => {
-    const keywords = SOURCE_KEYWORDS[source.id] ?? [];
-    return keywords.some((keyword) => normalized.includes(keyword));
-  });
-
-  if (matched.length > 0) {
-    return matched;
-  }
-
-  return sources;
+  return detectIntents(message, sources);
 }
 
 function createIntro(selected) {
@@ -143,6 +85,23 @@ export async function routeAssistant(message) {
   const toolTrace = [];
   const results = [];
 
+  if (selected.length === 0) {
+    return {
+      message,
+      answer: "I could not identify a campus source for that query. Try asking about a book, cafeteria meal, event, academic deadline, or hostel.",
+      sources: [],
+      toolTrace,
+      results: [],
+      mode: "rule-based fallback",
+      llm: {
+        configured: Boolean(process.env.LLM_PROVIDER && process.env.LLM_API_KEY),
+        provider: process.env.LLM_PROVIDER || null,
+        used: false
+      },
+      createdAt: new Date().toISOString()
+    };
+  }
+
   for (const source of selected) {
     const toolName = TOOL_BY_SOURCE[source.id];
     const startedAt = Date.now();
@@ -175,6 +134,12 @@ export async function routeAssistant(message) {
   return {
     message,
     answer: createAnswer(selected, results),
+    mode: "rule-based fallback",
+    llm: {
+      configured: Boolean(process.env.LLM_PROVIDER && process.env.LLM_API_KEY),
+      provider: process.env.LLM_PROVIDER || null,
+      used: false
+    },
     sources: selected.map((source) => ({
       id: source.id,
       label: source.label,

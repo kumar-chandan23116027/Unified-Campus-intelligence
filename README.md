@@ -1,271 +1,177 @@
-#  Campus Intelligence Dashboard
+# Campus Intel
 
-A unified campus dashboard that brings together **Library**, **Cafeteria**, **Events**, and **Academics** data into one clean interface — powered by an MCP-style architecture and an AI assistant router.
+Campus Intel is a full-stack campus information dashboard for the fictional **Northstar Institute of Technology**. It combines library, cafeteria, event, academic, and hostel data behind MCP-style source adapters and a rule-based campus assistant.
 
-**Live Demo → [https://mars-web-d-project-1.onrender.com](https://mars-web-d-project-1.onrender.com)**
+**Demo repository:** https://github.com/kumar-chandan23116027/mars-web-D-project
 
----
+**Render URL:** https://mars-web-d-project-1.onrender.com
 
-## ✨ Features
+> The Render URL must be considered unverified until an HTTP health check succeeds. Campus records are synthetic demo data unless `CAMPUS_DATA_API_URL` is configured.
 
--  **Library** — Book availability, study room status
--  **Cafeteria** — Daily menu, nutrition info, timings
--  **Events** — Workshops, club activities, campus events
--  **Academics** — Deadlines, course info, faculty details
--  **AI Assistant** — Ask anything in plain language, routed to the right source
--  **MCP Map** — Visual architecture of how data flows
+## Features
 
----
+- Library availability, copies, locations, and checked-out dates
+- Cafeteria menus, prices, dietary labels, calories, allergens, and wait estimates
+- Upcoming campus events, venues, clubs, registration, and seat counts
+- Academic policies, notices, and deadlines
+- Hostel occupancy, facilities, wardens, and notices
+- Rule-based assistant routing with source tool traces
+- MCP-style JSON-RPC tools and source overviews
+- SQLite-backed demo storage with JSON fixture fallback
+- Authenticated admin CRUD for campus records
+- Health, readiness, rate-limit, body-size, and centralized error handling
 
-##  Project Structure
+## Assistant behavior
 
-```
-campus-intelligence-dashboard/
-├── public/                  # Frontend (HTML, CSS, JS)
-│   ├── index.html
-│   ├── styles.css
-│   └── app.js
-├── src/
-│   ├── data/                # JSON data files
-│   │   ├── academics.json
-│   │   ├── cafeteria.json
-│   │   ├── events.json
-│   │   └── library.json
-│   ├── mcp/                 # MCP source servers
-│   │   ├── academics.js
-│   │   ├── cafeteria.js
-│   │   ├── events.js
-│   │   ├── library.js
-│   │   ├── registry.js
-│   │   └── shared.js
-│   ├── server/              # Backend logic
-│   │   ├── assistantRouter.js
-│   │   ├── http.js
-│   │   └── mcpRuntime.js
-│   └── server.js            # Main entry point
-├── tests/
-│   └── smoke.mjs            # Basic smoke tests
-├── .env.example             # Environment variable template
-├── .gitignore
-├── package.json
-└── README.md
+The assistant is not an AI/LLM. It uses intent keyword matching and record retrieval. Set `LLM_PROVIDER` and `LLM_API_KEY` only after implementing and selecting a provider integration; the current fallback deliberately remains rule-based.
+
+## Architecture
+
+```text
+Browser
+  -> Node HTTP server
+     -> Dashboard and assistant routes
+     -> MCP runtime
+        -> Library / Cafeteria / Events / Academics / Hostel source
+           -> Campus data adapter
+              -> SQLite document store
+              -> JSON demo fixtures
+              -> Optional external HTTP adapter
 ```
 
----
+The data status is labeled as `mock`, `live`, or `mock-fallback`. External integrations are never simulated as verified live data.
 
-##  Local Setup — Step by Step
+## Directory structure
 
-### Prerequisites
-
-Make sure these are installed on your computer:
-
-| Tool | Version | Download |
-|------|---------|----------|
-| Node.js | v18 or higher | [nodejs.org](https://nodejs.org) |
-| Git | Any | [git-scm.com](https://git-scm.com) |
-
-Check if already installed:
-```bash
-node --version
-git --version
+```text
+public/                 Frontend HTML, CSS, and JavaScript
+src/assistant/          Intent detection and assistant modules
+src/data/              Demo fixtures and SQLite adapter/storage
+src/mcp/               Campus MCP-style source adapters
+src/server/            HTTP, validation, auth, MCP, and error modules
+src/server.js          Application entry point
+tests/                 Unit, API, frontend, and smoke tests
+.github/workflows/      GitHub Actions CI
+render.yaml            Render deployment configuration
 ```
 
----
+## Requirements
 
-### Step 1 — Clone the Repository
+- Node.js 22 or newer
+- npm
+
+## Local setup
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/campus-intel.git
-```
-
-```bash
-cd campus-intel
-```
-
----
-
-### Step 2 — Install Dependencies
-
-```bash
-npm install
-```
-
----
-
-### Step 3 — Create `.env` File
-
-Create a `.env` file in the root folder of the project:
-
-```bash
-# Windows (Command Prompt)
-copy .env.example .env
-
-# Mac / Linux
+git clone https://github.com/kumar-chandan23116027/mars-web-D-project.git
+cd mars-web-D-project
+npm ci
 cp .env.example .env
-```
-
-Or create the `.env` file manually and add the following:
-
-```dotenv
-PORT=4173
-CAMPUS_NAME=Northstar Institute of Technology
-```
-
----
-
-### Step 4 — Start the Server
-
-```bash
 npm start
 ```
 
-You should see this in the terminal:
+Open `http://localhost:4173`.
 
-```
-Campus Intelligence Dashboard running at http://localhost:4173
-```
+## Environment variables
 
----
+| Variable | Default | Purpose |
+|---|---|---|
+| `PORT` | `4173` | HTTP port |
+| `CAMPUS_NAME` | `Northstar Institute of Technology` | Display name |
+| `DATABASE_PATH` | `./data/campus.db` | SQLite document store |
+| `DATA_MODE` | `mock` | Data provenance label |
+| `ADMIN_API_KEY` | unset | Bearer key for admin CRUD |
+| `BODY_LIMIT_BYTES` | `65536` | Maximum request body |
+| `RATE_LIMIT_WINDOW_MS` | `60000` | Rate-limit window |
+| `RATE_LIMIT_MAX_REQUESTS` | `120` | Requests per window per IP |
+| `INTEGRATION_TIMEOUT_MS` | `5000` | External adapter timeout |
+| `CAMPUS_DATA_API_URL` | unset | Optional external campus API base URL |
+| `CAMPUS_DATA_API_TOKEN` | unset | Optional bearer token for external API |
+| `LLM_PROVIDER` | unset | Reserved for future provider integration |
+| `LLM_API_KEY` | unset | Reserved secret; never commit it |
 
-### Step 5 — Open in Browser
+Do not commit `.env` or real credentials.
 
-Open your browser and go to:
-
-```
-http://localhost:4173
-```
-
- **The dashboard is now running locally!**
-
----
-
-##  Running Tests
-
-```bash
-npm test
-```
-
-This runs `tests/smoke.mjs` and checks all basic API endpoints.
-
----
-
-##  API Endpoints
+## Public API
 
 | Method | Endpoint | Description |
-|--------|----------|-------------|
-| `GET` | `/api/health` | Server health check |
-| `GET` | `/api/dashboard` | Full dashboard snapshot |
-| `POST` | `/api/assistant` | AI assistant query |
-| `GET` | `/mcp/:source` | MCP source info |
-| `POST` | `/mcp/:source` | MCP tool call |
+|---|---|---|
+| `GET` | `/api/health` | Liveness |
+| `GET` | `/api/ready` | Readiness and source count |
+| `GET` | `/api/dashboard` | Unified source snapshot |
+| `POST` | `/api/assistant` | Rule-based campus query |
+| `GET/POST` | `/mcp/:source` | Source metadata or JSON-RPC request |
+| `GET/POST/PATCH/DELETE` | `/api/admin/:source[/id]` | Authorized record CRUD |
 
-### Example — Assistant Query
+Example:
 
 ```bash
 curl -X POST http://localhost:4173/api/assistant \
-  -H "Content-Type: application/json" \
-  -d '{"message": "Is an AI book available in the library?"}'
+  -H "content-type: application/json" \
+  -d '{"message":"Is an AI book available?"}'
 ```
 
-### Example — Dashboard Data
+Admin example:
 
 ```bash
-curl http://localhost:4173/api/dashboard
+curl -H "Authorization: Bearer $ADMIN_API_KEY" \
+  http://localhost:4173/api/admin/events
 ```
 
----
-
-## ☁️ Deployment (Render.com)
-
-### Step 1 — Push to GitHub
+## MCP JSON-RPC
 
 ```bash
-git init
-git add .
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/campus-intel.git
-git push -u origin main
+curl -X POST http://localhost:4173/mcp/library \
+  -H "content-type: application/json" \
+  -d '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'
 ```
 
-### Step 2 — Render Setup
+Supported methods are `tools/list`, `tools/call`, and `source/overview`.
 
-1. Go to [render.com](https://render.com) → **New → Web Service**
-2. Connect your GitHub repository
-3. Use the following settings:
+## Data storage
 
-| Field | Value |
-|-------|-------|
-| Runtime | `Node` |
-| Build Command | `npm install` |
-| Start Command | `npm start` |
-| Instance Type | `Free` |
+SQLite is created automatically at `DATABASE_PATH`. JSON files under `src/data/` seed it on first use. The first process can replace demo records through authorized admin APIs. Without a Render persistent disk, Render storage is ephemeral and demo edits should not be treated as durable.
 
-4. Add the following Environment Variable:
-
-| Key | Value |
-|-----|-------|
-| `CAMPUS_NAME` | `Northstar Institute of Technology` |
-
->  Do **not** add `PORT` — Render sets this automatically.
-
-5. Click **Create Web Service** → Live in 3–5 minutes!
-
----
-
-##  Updating Your Code After Deployment
-
-Whenever you make changes locally, just run these 3 commands:
+## Testing
 
 ```bash
-git add .
-git commit -m "describe your change"
-git push
+npm test
+npm run test:unit
+npm run test:smoke
 ```
 
-Render will automatically detect the changes and redeploy.
+Tests cover health/readiness, dashboard state, assistant intent, malformed JSON, body limits, wrong methods, unknown routes/source, unknown MCP source, unknown queries, admin authentication and duplicates, rate limiting, and frontend structure.
 
----
+## Render deployment
 
-##  Common Issues & Fixes
+The checked-in `render.yaml` configures Node 22, `npm ci`, `npm start`, and `/api/health`. Set a persistent disk if SQLite edits must survive restarts.
 
-| Problem | Solution |
-|---------|----------|
-| `node: command not found` | Install Node.js from nodejs.org |
-| `PORT already in use` | Change PORT in `.env` (e.g. 3000) |
-| `Cannot find module` | Run `npm install` again |
-| Site slow on first load | Free tier sleep mode — normal, wait ~50 seconds |
-| Data not loading | Check `/api/health` in your browser |
+Manual setup:
 
----
+1. Create a Render Web Service from this repository.
+2. Use branch `main`, build `npm ci`, and start `npm start`.
+3. Set `CAMPUS_NAME`, `ADMIN_API_KEY`, and `DATABASE_PATH`.
+4. Deploy and verify `/api/health`, `/api/ready`, and `/api/dashboard`.
+5. Use a persistent disk or external database for durable admin changes.
 
-## 🛠️ Tech Stack
+## Limitations
 
-| Layer | Technology |
-|-------|-----------|
-| Frontend | Vanilla HTML, CSS, JavaScript |
-| Backend | Node.js (no framework) |
-| Architecture | MCP-style source routing |
-| Hosting | Render.com |
-| Data | Static JSON files |
+- Data is synthetic until a real institutional API is configured.
+- Assistant retrieval is rule-based.
+- SQLite storage on ephemeral hosting is not durable.
+- Admin UI has bearer-key access and is intended for controlled demo use.
+- External LMS/library/cafeteria/event/hostel credentials are not included.
+- No screenshots are bundled yet.
 
----
+## Future work
 
-## 📝 Environment Variables
+- Real LMS and student-authentication integration
+- Live library, cafeteria, event, timetable, and hostel APIs
+- Persistent PostgreSQL storage and migrations
+- Provider-approved LLM integration
+- Expanded role-based admin permissions
+- Browser end-to-end tests and screenshot artifacts
 
-| Variable | Default | Description |
-|----------|---------|-------------|
-| `PORT` | `4173` | Server port (local development only) |
-| `CAMPUS_NAME` | — | Display name of the campus |
+## License
 
----
-
-## 👤 Author
-
-Built for **Problem Statement 1** — Chandan Kumar
-
----
-
-## 📄 License
-
-MIT License — free to use and modify.
+MIT. See `LICENSE`.
