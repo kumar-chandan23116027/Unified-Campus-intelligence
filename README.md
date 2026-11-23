@@ -2,7 +2,7 @@
 
 Campus Intel is a full-stack campus information dashboard for the fictional **Northstar Institute of Technology**. It combines library, cafeteria, event, academic, and hostel data behind MCP-style source adapters and a rule-based campus assistant.
 
-**Demo repository:** https://github.com/kumar-chandan23116027/mars-web-D-project
+**Demo repository:**https://github.com/kumar-chandan23116027/Unified-Campus-intelligence
 
 **Render URL:** https://mars-web-d-project-1.onrender.com
 
